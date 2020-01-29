@@ -1,0 +1,23 @@
+{
+  "name": "ftp-gcs-bridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/src/index.js",
+    "watch": "npx typescript --skipLibCheck -w",
+    "postinstall": "npx typescript --skipLibCheck"
+  },
+  "author": "Oliver Lorenz <mail@oliverlorenz.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^4.3.0",
+    "ftp-srv": "^4.3.1",
+    "temp-path": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/bunyan": "^1.8.6",
+    "@types/node": "^12.12.25",
+    "typescript": "^3.7.5"
+  }
+}
